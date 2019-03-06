@@ -76,9 +76,9 @@
                     <p class="name">Pecan</p>
                 </div>
 
-                <div class="nut" data-nut="no" data-message="Pinenuts are seeds">
-                    <img src="assets/img/nuts/pinenut.jpg" alt="Pinenut">
-                    <p class="name">Pinenut</p>
+                <div class="nut" data-nut="no" data-message="Pine nuts are seeds">
+                    <img src="assets/img/nuts/pinenut.jpg" alt="Pine nut">
+                    <p class="name">Pine nut</p>
                 </div>
 
                 <div class="nut" data-nut="no" data-message="Pistachios are seeds">
@@ -93,9 +93,11 @@
             </div>
 
             <footer>
-                <p>Wildish&Co are nuts about designing things. Please get in touch. Please.</p>
+                <a href="https://wildishandco.co.uk/" target="noopener">
+                    <p>Wildish&Co are nuts about designing things. Please get in touch. Please.</p>
 
-                <img src="assets/img/wandco-hand.svg" alt="Wildish&Co">
+                    <img src="assets/img/wandco-hand.svg" alt="Wildish&Co">
+                </a>
             </footer>
         </section>
 

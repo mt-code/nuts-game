@@ -24,13 +24,20 @@ body.home {
     @include transform(translateY(-50%));
 
     footer {
+      display: block;
       text-align: center;
 
       p {
         font-family: brandon-grotesque, sans-serif;
         font-weight: 400;
         font-size: 16px;
-        margin-bottom: 20px;
+        line-height: 24px;
+        margin: 0 auto 20px;
+        max-width: 90%;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       img { height: 80px; }
@@ -129,6 +136,54 @@ body.home > section.content > .nuts {
     &:hover {
       img { opacity: 0.65; }
       p.name { font-weight: 600; }
+    }
+  }
+}
+
+@media all and (max-width: 800px), all and (max-height: 800px) {
+  body.home > section.content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
+}
+
+@media all and (max-width: 800px) {
+  body.home > section.content > .nuts > .nut {
+      flex-basis: 33%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  body.home > section.content > .nuts > .nut {
+    flex-basis: 50%;
+  }
+
+  body.home section#overlay .content p {
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body.home h1 {
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  body.home > section.content > .nuts {
+    max-width: 250px;
+
+    .nut {
+      flex-basis: 100%;
+
+      &:nth-of-type(n + 2) {
+        margin-top: 50px;
+      }
     }
   }
 }

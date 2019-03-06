@@ -188,12 +188,17 @@ body.home {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     body.home section.content footer {
+      display: block;
       text-align: center; }
       body.home section.content footer p {
         font-family: brandon-grotesque, sans-serif;
         font-weight: 400;
         font-size: 16px;
-        margin-bottom: 20px; }
+        line-height: 24px;
+        margin: 0 auto 20px;
+        max-width: 90%; }
+        body.home section.content footer p:hover {
+          text-decoration: underline; }
       body.home section.content footer img {
         height: 80px; }
   body.home section#overlay {
@@ -273,3 +278,35 @@ body.home > section.content > .nuts {
       opacity: 0.65; }
     body.home > section.content > .nuts .nut:hover p.name {
       font-weight: 600; }
+
+@media all and (max-width: 800px), all and (max-height: 800px) {
+  body.home > section.content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    transform: none;
+    top: auto;
+    left: auto; } }
+
+@media all and (max-width: 800px) {
+  body.home > section.content > .nuts > .nut {
+    flex-basis: 33%; } }
+
+@media all and (max-width: 650px) {
+  body.home > section.content > .nuts > .nut {
+    flex-basis: 50%; }
+  body.home section#overlay .content p {
+    font-size: 50px; } }
+
+@media all and (max-width: 500px) {
+  body.home h1 {
+    font-size: 50px; } }
+
+@media all and (max-width: 450px) {
+  body.home > section.content > .nuts {
+    max-width: 250px; }
+    body.home > section.content > .nuts .nut {
+      flex-basis: 100%; }
+      body.home > section.content > .nuts .nut:nth-of-type(n + 2) {
+        margin-top: 50px; } }
