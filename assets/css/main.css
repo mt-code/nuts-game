@@ -187,6 +187,15 @@ body.home {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
+    body.home section.content footer {
+      text-align: center; }
+      body.home section.content footer p {
+        font-family: brandon-grotesque, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 20px; }
+      body.home section.content footer img {
+        height: 80px; }
 
 body.home > section.content > .nuts {
   display: flex;

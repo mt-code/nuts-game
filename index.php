@@ -82,6 +82,12 @@
                     <p class="name">Walnut</p>
                 </div>
             </div>
+
+            <footer>
+                <p>Wildish&Co are nuts about designing things. Please get in touch. Please.</p>
+
+                <img src="assets/img/wandco-hand.svg" alt="Wildish&Co">
+            </footer>
         </section>
 
         <script type="text/javascript" src="assets/js/main.js"></script>
