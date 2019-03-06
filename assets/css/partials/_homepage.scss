@@ -1,0 +1,68 @@
+body.home {
+  position: relative;
+
+  h1 {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    text-align: center;
+
+    &::after {
+      content: '*Botanical';
+      display: block;
+      margin-top: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  section.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+}
+
+body.home > section.content > .nuts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px auto;
+  width: 80%;
+  max-width: 800px;
+  border: 1px solid black;
+
+  .nut {
+    flex-basis: 25%;
+    padding: 15px 10px 0;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 95%;
+      object-fit: contain;
+      object-position: bottom;
+      transition: opacity 0.4s ease-in-out;
+    }
+
+    p.name {
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+
+      font-family: brandon-grotesque, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &:hover {
+      img { opacity: 0.65; }
+      p.name { font-weight: 600; }
+    }
+  }
+}
