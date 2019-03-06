@@ -41,10 +41,9 @@ body.home {
 body.home > section.content > .nuts {
   display: flex;
   flex-wrap: wrap;
-  margin: 25px auto;
+  margin: 25px auto 50px;
   width: 80%;
   max-width: 800px;
-  border: 1px solid black;
 
   .nut {
     flex-basis: 25%;
