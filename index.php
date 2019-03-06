@@ -101,6 +101,14 @@
             </footer>
         </section>
 
+        <audio id="ding" preload="auto">
+            <source src="assets/sounds/ding.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="buzzer" preload="auto">
+            <source src="assets/sounds/buzzer.mp3" type="audio/mpeg">
+        </audio>
+
         <script type="text/javascript" src="assets/js/main.js"></script>
     </body>
 </html>

@@ -1,3 +1,5 @@
+// Set click listeners for nuts
+
 var nuts = document.getElementsByClassName('nut');
 
 for (var i = 0; nuts[i]; i++) {
@@ -11,8 +13,12 @@ for (var i = 0; nuts[i]; i++) {
     })
 }
 
+// Toggle Overlay.
+
 var animating = false;
 var overlay = document.getElementById('overlay');
+var failSound = document.getElementById('buzzer');
+var successSound = document.getElementById('ding');
 function showOverlay(success, message) {
     if (animating) return;
 
@@ -20,6 +26,12 @@ function showOverlay(success, message) {
     overlay.querySelector('.title').innerHTML = success
         ? "Yes, Hazelnuts<br />are nuts"
         : "Not a Nut";
+
+    if (success) {
+        successSound.play();
+    } else {
+        failSound.play();
+    }
 
     overlay.classList.remove(success ? 'fail' : 'success');
     overlay.classList.add(success ? 'success' : 'fail');
