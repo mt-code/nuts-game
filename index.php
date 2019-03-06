@@ -7,6 +7,16 @@
         <meta name="description" content="Can you find the botanical but?" />
         <meta name="viewport" content="device-width=1.0, initial-scale=1.0" />
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110949102-5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-110949102-5');
+        </script>
+
         <link rel="stylesheet" href="https://use.typekit.net/jrf5itg.css">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
