@@ -12,6 +12,15 @@
     </head>
 
     <body class="home">
+        <section id="overlay" class="hidden">
+            <img class="success" src="assets/img/tick.svg" alt="Tick">
+            <img class="fail" src="assets/img/cross.svg" alt="Cross">
+
+            <div class="content">
+                <p class="title">Not a nut</p>
+                <p class="message">Cashews are seeds</p>
+            </div>
+        </section>
 
 
         <section class="content">
@@ -20,64 +29,64 @@
             <div class="nuts">
 
                 <!-- FIRST ROW -->
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Almonds are seeds">
                     <img src="assets/img/nuts/almond.jpg" alt="Almond">
                     <p class="name">Almond</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Brazil nuts are seeds">
                     <img src="assets/img/nuts/brazil.jpg" alt="Brazil">
                     <p class="name">Brazil</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Cashews are seeds">
                     <img src="assets/img/nuts/cashew.jpg" alt="Cashew">
                     <p class="name">Cashew</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Coconuts are drupes">
                     <img src="assets/img/nuts/coconut.jpg" alt="Coconut">
                     <p class="name">Coconut</p>
                 </div>
 
                 <!-- SECOND ROW -->
-                <div class="nut">
+                <div class="nut" data-nut="yes" data-message="Obviously.">
                     <img src="assets/img/nuts/hazelnut.jpg" alt="Hazelnut">
                     <p class="name">Hazel</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Macadamias are seeds">
                     <img src="assets/img/nuts/macadamia.jpg" alt="Macadamia">
                     <p class="name">Macadamia</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Nuts are metal">
                     <img src="assets/img/nuts/metalnuts.jpg" alt="Metal Nuts">
                     <p class="name">Nuts</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Peanuts are legumes">
                     <img src="assets/img/nuts/peanut.jpg" alt="Peanut">
                     <p class="name">Peanut</p>
                 </div>
 
                 <!-- THIRD ROW -->
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Pecans are seeds">
                     <img src="assets/img/nuts/pecan.jpg" alt="Pecan">
                     <p class="name">Pecan</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Pinenuts are seeds">
                     <img src="assets/img/nuts/pinenut.jpg" alt="Pinenut">
                     <p class="name">Pinenut</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Pistachios are seeds">
                     <img src="assets/img/nuts/pistachio.jpg" alt="Pistachio">
                     <p class="name">Pistachio</p>
                 </div>
 
-                <div class="nut">
+                <div class="nut" data-nut="no" data-message="Walnuts are seeds">
                     <img src="assets/img/nuts/walnut.jpg" alt="Walnut">
                     <p class="name">Walnut</p>
                 </div>
