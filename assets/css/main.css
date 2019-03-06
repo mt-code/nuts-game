@@ -203,6 +203,7 @@ body.home {
     z-index: 10;
     display: block;
     opacity: 1;
+    cursor: none;
     transition: opacity 0.6s ease-in-out; }
     body.home section#overlay.hidden {
       display: none; }
